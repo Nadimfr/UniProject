@@ -1,30 +1,38 @@
-import { Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, TouchableOpacity, StyleSheet, Platform } from "react-native";
 
-const LinkComponent = (props) =>{
+const LinkComponent = (props) => {
+  const chosenStyles = props.settings.map((item) => styles[item]);
+  return (
+    <TouchableOpacity onPress={() => props.onPress()}>
+      <Text style={[chosenStyles]}>{props.text}</Text>
+    </TouchableOpacity>
+  );
+};
 
-    const chosenStyles = props.settings.map((item)=>styles[item])
-    return(
-        <TouchableOpacity onPress={()=>props.onPress()}>
-            <Text  style={[chosenStyles]}>{props.text}</Text>
-        </TouchableOpacity>
-    )
-}
-
-// <------ STYLES CHANGES DEPENDING ON PROPS ------> 
+// <------ STYLES CHANGES DEPENDING ON PROPS ------>
 
 const styles = StyleSheet.create({
-    null:{
-        color:'#fff',
-    },
-    primary:{
-        color:'green',
-    },
-    danger:{
-        color:'red',
-    },
-    underline:{
-        textDecorationLine:'underline'
-    }
-})
+  null: {
+    color: "#E61A23",
+  },
+  primary: {
+    color: "#E61A23",
+  },
+  danger: {
+    color: "#E61A23",
+  },
+  grey: {
+    color: "grey",
+  },
+  position: {
+    alignSelf: "flex-end",
+  },
+  bold: {
+    fontWeight: Platform.OS === "ios" ? "600" : "bold",
+  },
+  large: {
+    fontSize: 14,
+  },
+});
 
-export default LinkComponent
+export default LinkComponent;

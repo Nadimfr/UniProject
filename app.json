@@ -4,18 +4,16 @@
     "slug": "test-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/B2C.png",
     "splash": {
-      "image": "./assets/Logo-Drawer.png",
-      "resizeMode": "contain",
+      "image": "./assets/B2C.png",
+      "resizeMode": "center",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },

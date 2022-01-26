@@ -1,18 +1,17 @@
-import React, { useEffect,useContext } from 'react'
-import {View,Text} from 'react-native';
-import { MainContext } from '../../MainContext';
+import React, { useEffect, useContext } from "react";
+import { View } from "react-native";
+import { MainContext } from "../../MainContext";
+import { Text } from "../../components/index";
 
-const Home = ({navigation}) =>{
-    const {LoggedIn} = useContext(MainContext);
-    useEffect(()=>{
+const Home = ({ navigation }) => {
+  const { LoggedIn } = useContext(MainContext);
+  useEffect(() => {}, []);
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>{LoggedIn ? "logged in" : "Not Logged In"}</Text>
+      <Text onPress={() => navigation.navigate("homeDetailed")}>Home Page</Text>
+    </View>
+  );
+};
 
-    },[])
-    return(
-        <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-            <Text>{LoggedIn?"logged in":"not logged in"}</Text>
-            <Text onPress={()=>navigation.navigate("homeDetailed")}>Home Page</Text>
-        </View>
-    )
-}
-
-export default Home
+export default Home;

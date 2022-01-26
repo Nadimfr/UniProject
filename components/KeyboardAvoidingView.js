@@ -1,21 +1,24 @@
-import { StyleSheet, KeyboardAvoidingView } from 'react-native';
+import { StyleSheet, KeyboardAvoidingView } from "react-native";
 
-export const KeyboardAvoiding = (props) =>{
-    return(
-    <KeyboardAvoidingView style={[styles.container,props.style]}
-    behavior={Platform.OS === "ios" ? "padding" : "height"}>
-        {props.children}
+export const KeyboardAvoiding = (props) => {
+  return (
+    <KeyboardAvoidingView
+      style={[styles.container, props.style]}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
+      {props.children}
     </KeyboardAvoidingView>
-    )
-}
+  );
+};
 
 const styles = StyleSheet.create({
-    container: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flex: 1
-    },
-})
+  container: {
+    backgroundColor: "white",
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    flex: 1,
+  },
+});
 
-export default KeyboardAvoiding
+export default KeyboardAvoiding;
