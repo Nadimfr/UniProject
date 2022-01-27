@@ -13,6 +13,7 @@ import { clearAll, getData, storeData } from "./helpers/asyncStorage";
 
 import AboutStack from "./navigations/AboutStack";
 import ContactStack from "./navigations/ContactStack";
+import SupportStack from "./navigations/SupportStack";
 import BottomTabStack from "./navigations/BottomTabStack";
 import AuthStack from "./navigations/AuthStack";
 import Products from "./screens/Products/Products";
@@ -176,6 +177,21 @@ export const App = () => {
                   headerTintColor: "#E61A23",
                   headerTitle: () => (
                     <Header title="Contact" LoggedIn={LoggedIn} />
+                  ),
+                }}
+              />
+              <DrawerStack.Screen
+                name="Support"
+                component={SupportStack}
+                options={{
+                  headerStyle: {
+                    backgroundColor: "white",
+                    borderBottomWidth: 2,
+                    borderBottomColor: "#E61A23",
+                  },
+                  headerTintColor: "#E61A23",
+                  headerTitle: () => (
+                    <Header title="Support" LoggedIn={LoggedIn} />
                   ),
                 }}
               />

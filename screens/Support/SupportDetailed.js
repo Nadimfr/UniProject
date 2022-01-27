@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-const ContactDetailed = () => {
+const SupportDetailed = () => {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>About Detailed Page</Text>
@@ -9,4 +9,4 @@ const ContactDetailed = () => {
   );
 };
 
-export default ContactDetailed;
+export default SupportDetailed;

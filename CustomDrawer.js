@@ -47,7 +47,7 @@ export const CustomDrawer = (props) => {
           props.navigation.navigate("Home");
         }}
         icon={({ focused, color, size }) => (
-          <MaterialCommunityIcons name="home" size={28} color="black" />
+          <MaterialCommunityIcons name="home" size={28} color="#E61A23" />
         )}
       />
       <CustomItem
@@ -59,7 +59,7 @@ export const CustomDrawer = (props) => {
           <MaterialCommunityIcons
             name="account-question"
             size={28}
-            color="black"
+            color="#E61A23"
           />
         )}
       />
@@ -69,7 +69,17 @@ export const CustomDrawer = (props) => {
           props.navigation.navigate("Contact");
         }}
         icon={({ focused, color, size }) => (
-          <MaterialIcons name="contact-page" size={24} color="black" />
+          <MaterialIcons name="contact-page" size={24} color="#E61A23" />
+        )}
+      />
+
+      <CustomItem
+        label="Support"
+        onPress={() => {
+          props.navigation.navigate("Support");
+        }}
+        icon={({ focused, color, size }) => (
+          <MaterialIcons name="contact-support" size={28} color="#E61A23" />
         )}
       />
       {props.LoggedIn && (
@@ -82,7 +92,7 @@ export const CustomDrawer = (props) => {
             <MaterialCommunityIcons
               name="zip-box-outline"
               size={28}
-              color="black"
+              color="#E61A23"
             />
           )}
         />
@@ -96,7 +106,7 @@ export const CustomDrawer = (props) => {
           <MaterialCommunityIcons
             name={props.LoggedIn ? "logout" : "login"}
             size={28}
-            color="black"
+            color="#E61A23"
           />
         )}
       />
