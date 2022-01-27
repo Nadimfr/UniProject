@@ -4,6 +4,7 @@ import { styles } from "./ContactStyle";
 import { Ionicons, FontAwesome, Feather, Entypo } from "@expo/vector-icons";
 import {
   Text,
+  TextInput,
   Alert,
   DocumentPicker,
   ImagePicker,
@@ -13,6 +14,7 @@ import {
   ViewContainer,
   CheckBox,
   MultiSelect,
+  CountryCode,
   ScrollView,
   HeaderText,
 } from "../../components/index";
@@ -24,6 +26,17 @@ const Contact = ({ navigation }) => {
   const [selected, setSelected] = useState();
   const [checked, setChecked] = useState(false);
   const [multiple, setMultiple] = useState();
+
+  const [userCred, setUserCred] = useState({
+    email: "",
+    fullname: "",
+    phone: "",
+    message: "",
+  });
+
+  const settingCreds = (e, t) => {
+    setUserCred({ ...userCred, [t]: e });
+  };
 
   return (
     <ScrollView style={{ backgroundColor: "white" }}>
@@ -58,6 +71,50 @@ const Contact = ({ navigation }) => {
 
         <View style={styles.Card}>
           <Text style={styles.Title}>Quick Contact</Text>
+
+          <TextInput
+            variant="outlined"
+            label="Email"
+            onChangeText={(e) => settingCreds(e, "email")}
+            value={userCred.email}
+            left="account-outline"
+          />
+
+          <TextInput
+            variant="outlined"
+            label="Full Name"
+            onChangeText={(e) => settingCreds(e, "fullname")}
+            value={userCred.fullname}
+            left="account-outline"
+          />
+
+          <CountryCode
+            onChangeFormattedText={(text) => {
+              setUserCred({ ...userCred, phone: text });
+              console.log(userCred.phone);
+            }}
+            defaultValue={userCred.phone}
+          />
+
+          {/* <TextInput
+            variant="outlined"
+            label="Message"
+            onChangeText={(e) => settingCreds(e, "fullname")}
+            value={userCred.message}
+            style={styles.Message}
+          /> */}
+
+          <TextInput
+            variant="outlined"
+            label="Message"
+            // Inherit any props passed to it; e.g., multiline, numberOfLines below
+            editable
+            maxLength={40}
+          />
+
+          <TouchableOpacity style={styles.Submit}>
+            <Text style={styles.txtSubmit}>Submit</Text>
+          </TouchableOpacity>
         </View>
 
         {/* <Image

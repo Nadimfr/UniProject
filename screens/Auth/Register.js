@@ -20,11 +20,12 @@ const Register = ({ navigation }) => {
     password: "",
     confirm: "",
   });
-  const [showPass, setShowPass] = useState(true);
 
   const settingCreds = (e, t) => {
     setUserCred({ ...userCred, [t]: e });
   };
+
+  const [showPass, setShowPass] = useState(true);
 
   return (
     <KeyboardAvoidingView style={styles.loginContainer}>

@@ -42,6 +42,5 @@ const styles1 = StyleSheet.create({
     borderWidth: 1.1,
     borderColor: "grey",
     borderRadius: 5,
-    // ma,
   },
 });
