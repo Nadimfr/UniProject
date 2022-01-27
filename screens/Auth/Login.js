@@ -68,7 +68,15 @@ const Login = ({ navigation }) => {
   }, [setUserCred]);
 
   return (
-    <KeyboardAvoidingView>
+    <View
+      style={{
+        backgroundColor: "white",
+        display: "flex",
+        justifyContent: "flex-start",
+        alignItems: "center",
+        flex: 1,
+      }}
+    >
       <View style={styles.LogoImgContainer}>
         <Image
           source={require("../../assets/B2C.png")}
@@ -163,11 +171,12 @@ const Login = ({ navigation }) => {
         <Text style={styles.loginText}>Don’t have an account?</Text>
         <Link
           text={"SIGN UP"}
+          style={{ alignItems: "flex-end" }}
           settings={["primary", "bold", "large"]}
           onPress={() => navigation.navigate("Auth", { screen: "register" })}
         />
       </View>
-    </KeyboardAvoidingView>
+    </View>
   );
 };
 

@@ -56,6 +56,10 @@ const Contact = ({ navigation }) => {
           </TouchableOpacity>
         </View>
 
+        <View style={styles.Card}>
+          <Text style={styles.Title}>Quick Contact</Text>
+        </View>
+
         {/* <Image
           style={styles.Banner}
           source={require("../../assets/Banner.png")}

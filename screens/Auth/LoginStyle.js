@@ -66,10 +66,12 @@ export const styles = StyleSheet.create({
   },
   NoAccountContainer: {
     display: "flex",
+    flex: 1,
+    justifyContent: "flex-end",
     flexDirection: "row",
     alignItems: "center",
-    position: "absolute",
-    bottom: 20,
+    // position: Platform.OS === "ios" ? "absolute" : null,
+    bottom: 0,
   },
   Circle: {
     marginHorizontal: 5,
