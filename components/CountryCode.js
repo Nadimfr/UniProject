@@ -24,7 +24,7 @@ const CountryCode = (props) => {
           }}
           textContainerStyle={{ backgroundColor: "#fff" }}
           //   defaultValue={phoneNumber}
-          defaultCode="IN"
+          defaultCode="LB"
         />
       </View>
       <></>

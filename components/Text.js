@@ -8,7 +8,7 @@ const TextComponent = (props) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 18,
-    fontFamily: "Inter-Light",
+    fontFamily: "Roboto-Light",
     marginVertical: 20,
   },
 });
