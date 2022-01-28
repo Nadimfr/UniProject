@@ -28,9 +28,11 @@ import AlertComponent from "../../components/Alert";
 const Login = ({ navigation }) => {
   const { signIn } = useContext(MainContext);
   const [alert, setAlert] = useState({ visible: false, data: {} });
-  const [userCred, setUserCred] = useState({ email: "", password: "" });
+
   const [showPass, setShowPass] = useState(true);
   const [rememberMe, setRememberMe] = useState(false);
+
+  const [userCred, setUserCred] = useState({ email: "", password: "" });
 
   const settingCreds = (e, t) => {
     setUserCred({ ...userCred, [t]: e });
@@ -100,9 +102,11 @@ const Login = ({ navigation }) => {
           left="lock-outline"
         />
         <Link
-          text={"Forgot password"}
+          text={"Forgot Password"}
           settings={["grey", "underline", "position"]}
-          onPress={() => navigation.navigate("Auth", { screen: "register" })}
+          onPress={() =>
+            navigation.navigate("Auth", { screen: "Forgot Password" })
+          }
         />
       </View>
       <View style={{ display: "flex", flexDirection: "column", marginTop: 15 }}>

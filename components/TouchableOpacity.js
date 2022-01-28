@@ -19,6 +19,7 @@ const TouchableOpacityComponent = (props) => {
             display: "flex",
             fontFamily: "Adam-Bold",
             fontSize: 20,
+            color: "white",
           },
         ]}
       >

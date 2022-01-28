@@ -21,6 +21,9 @@ const styles = StyleSheet.create({
   danger: {
     color: "#E61A23",
   },
+  white: {
+    color: "white",
+  },
   grey: {
     color: "grey",
   },
