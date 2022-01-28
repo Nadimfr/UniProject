@@ -19,3 +19,4 @@ export { default as SearchBar } from "./Searchbar";
 export { default as Collapsible } from "./DrawerCollapsible";
 export { default as RadioButton } from "./RadioButtonGroup";
 export { default as CountryCode } from "./CountryCode";
+export { default as Accordion } from "./Accordion";

@@ -24,6 +24,7 @@ import {
   CountryCode,
   ScrollView,
   HeaderText,
+  Accordion,
 } from "../../components/index";
 
 const Support = ({ navigation }) => {
@@ -85,8 +86,12 @@ const Support = ({ navigation }) => {
           </TouchableOpacity>
         </View>
 
-        <View style={styles.Questions}>
+        <View>
           <Text style={styles.Title}>Frequently asked questions</Text>
+        </View>
+
+        <View>
+          <Accordion containerStyle={styles.Accordion} />
         </View>
 
         {/* <Image

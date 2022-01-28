@@ -49,5 +49,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: "Roboto-Bold",
   },
-  Questions: {},
+  Accordion: {
+    paddingHorizontal: 25,
+  },
 });
