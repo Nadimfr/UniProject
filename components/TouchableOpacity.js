@@ -1,21 +1,16 @@
-import { Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Text, TouchableOpacity, StyleSheet, Dimensions } from "react-native";
 
 const TouchableOpacityComponent = (props) => {
   const chosenStyles = props.settings.map((item) => styles[item]);
   return (
     <TouchableOpacity
       onPress={() => props.onPress()}
-      style={[chosenStyles, styles.base, props.style]}
+      style={[chosenStyles, props.style]}
     >
       <Text
         style={[
           props.textStyle,
           {
-            // color: !props.settings.includes("outlined")
-            //   ? "#fff"
-            //   : props.settings.includes("danger")
-            //   ? "red"
-            //   : "#E61A23",
             display: "flex",
             fontFamily: "Roboto-Medium",
             fontSize: 20,
