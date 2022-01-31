@@ -17,7 +17,7 @@ const TouchableOpacityComponent = (props) => {
             //   ? "red"
             //   : "#E61A23",
             display: "flex",
-            fontFamily: "Adam-Bold",
+            fontFamily: "Roboto-Medium",
             fontSize: 20,
             color: "white",
           },
@@ -48,6 +48,12 @@ const styles = StyleSheet.create({
     borderColor: "#E61A23",
     backgroundColor: "#E61A23",
   },
+  // secondary: {
+  //   borderWidth: 2,
+  //   borderColor: "#E61A23",
+  //   borderColor: "#E61A23",
+  //   backgroundColor: "white",
+  // },
   danger: {
     borderColor: "#313783",
     backgroundColor: "#313783",
