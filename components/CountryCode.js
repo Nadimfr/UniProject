@@ -39,8 +39,7 @@ const styles1 = StyleSheet.create({
     marginBottom: 30,
   },
   Box: {
-    borderWidth: 1.1,
-    borderColor: "grey",
-    borderRadius: 5,
+    borderBottomWidth: 1,
+    borderBottomColor: "gray",
   },
 });

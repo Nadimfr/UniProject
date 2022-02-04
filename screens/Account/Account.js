@@ -12,7 +12,7 @@ import {
 } from "../../components";
 import { styles } from "./AccountStyle";
 
-const Account = ({ navigation }) => {
+const Account = ({ navigation, route }) => {
   return (
     <View
       style={{
@@ -27,20 +27,24 @@ const Account = ({ navigation }) => {
       </Text> */}
       <Text style={styles.Title}>Account Details</Text>
       <View style={{ marginVertical: 20 }}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("accountDetailed")}
+        {/* <TouchableOpacity
+          onPress={() =>
+            navigation.navigate("detailed", { routeType: "Personal" })
+          }
           text="Personal"
           settings={["full"]}
-        />
+        /> */}
 
         <TouchableOpacity
           style={styles.TO}
-          onPress={() => navigation.navigate("accountDetailed")}
+          onPress={() =>
+            navigation.navigate("accountDetailed", { routeType: "Personal+" })
+          }
         >
           <Text style={styles.Text}>Personal</Text>
           <MaterialIcons
             name="keyboard-arrow-right"
-            size={40}
+            size={35}
             color="#E61A23"
           />
         </TouchableOpacity>
@@ -51,18 +55,23 @@ const Account = ({ navigation }) => {
           <Text style={styles.Text}>Address</Text>
           <MaterialIcons
             name="keyboard-arrow-right"
-            size={40}
+            size={35}
             color="#E61A23"
           />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.TO}
           onPress={() => navigation.navigate("accountDetailed")}
+          onPress={() =>
+            navigation.navigate("accountDetailed", {
+              screen: "Step1",
+            })
+          }
         >
           <Text style={styles.Text}>Paymen Info</Text>
           <MaterialIcons
             name="keyboard-arrow-right"
-            size={40}
+            size={35}
             color="#E61A23"
           />
         </TouchableOpacity>
@@ -73,7 +82,7 @@ const Account = ({ navigation }) => {
           <Text style={styles.Text}>Change Password</Text>
           <MaterialIcons
             name="keyboard-arrow-right"
-            size={40}
+            size={35}
             color="#E61A23"
           />
         </TouchableOpacity>

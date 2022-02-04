@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import {
   View,
-  Image,
   TouchableOpacity as TO,
   Dimensions,
   svg,
   Linking,
+  Image,
 } from "react-native";
 import { MainContext } from "../../MainContext";
 import { formValidator } from "../../helpers/formValidator";
@@ -79,24 +79,23 @@ const Login = ({ navigation }) => {
         flex: 1,
       }}
     >
-      <View style={styles.LogoImgContainer}>
-        <Image
-          source={require("../../assets/B2C.png")}
-          style={styles.LogoImg}
-          resizeMode="cover"
-        />
-      </View>
+      <Image
+        source={require("../../assets/B2C.png")}
+        style={styles.LogoImg}
+        resizeMode="cover"
+      />
+
       <TextInput
-        variant="outlined"
-        label="Email"
+        variant="flat"
+        label="        Email"
         onChangeText={(e) => settingCreds(e, "email")}
         value={userCred.email}
         left="account-outline"
       />
       <View>
         <PassInput
-          variant="outlined"
-          label="Password"
+          variant="flat"
+          label="        Password"
           onChangeText={(e) => settingCreds(e, "password")}
           value={userCred.password}
           left="lock-outline"
@@ -112,7 +111,7 @@ const Login = ({ navigation }) => {
       <View style={{ display: "flex", flexDirection: "column", marginTop: 15 }}>
         <TouchableOpacity
           style={{
-            width: Dimensions.get("screen").width * 0.75,
+            width: Dimensions.get("screen").width * 0.8,
           }}
           textStyle={{ color: "white" }}
           text="Login"
@@ -161,13 +160,16 @@ const Login = ({ navigation }) => {
           onPress={() => openUrl("https://www.facebook.com")}
           style={styles.Circle}
         >
-          <FontAwesome name="facebook" size={32} color="blue" />
+          <FontAwesome name="facebook" size={32} color="#1877f2" />
         </TO>
         <TO
           onPress={() => openUrl("https://www.google.com")}
           style={styles.Circle}
         >
-          <FontAwesome name="google" size={32} color="green" />
+          <Image
+            style={{ height: 30, width: 30 }}
+            source={require("../../assets/google.png")}
+          />
         </TO>
       </View>
 

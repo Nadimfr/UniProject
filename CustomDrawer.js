@@ -29,7 +29,7 @@ export const CustomDrawer = (props) => {
     <DrawerContentScrollView {...props} showsVerticalScrollIndicator={false}>
       <View style={styles.LogoImgContainer}>
         <Image
-          source={require("./assets/Logo-Drawer.png")}
+          source={require("./assets/B2C.png")}
           style={styles.LogoImg}
           resizeMode="cover"
         />

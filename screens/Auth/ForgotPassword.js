@@ -56,8 +56,8 @@ const ForgotPassword = ({ navigation }) => {
           </Text>
         </View>
         <TextInput
-          variant="outlined"
-          label="Email"
+          variant="flat"
+          label="        Email"
           onChangeText={(e) => settingCreds(e, "email")}
           value={userCred.email}
           left="email-outline"
@@ -317,15 +317,15 @@ const ForgotPassword = ({ navigation }) => {
 
         <View>
           <PassInput
-            variant="outlined"
-            label="New Password"
+            variant="flat"
+            label="        New Password"
             onChangeText={(e) => settingCreds(e, "password")}
             value={userCred.password}
             left="lock-outline"
           />
           <PassInput
-            variant="outlined"
-            label="Confirm Password"
+            variant="flat"
+            label="        Confirm Password"
             onChangeText={(e) => settingCreds(e, "password")}
             value={userCred.password}
             left="lock-outline"
@@ -427,7 +427,7 @@ const ForgotPassword = ({ navigation }) => {
 
   /* render MultiStep */
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: "#E61A23" }}>
       <AnimatedMultistep
         steps={allSteps}
         onFinish={finish}

@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get("screen").width * 0.8,
     // height: 60,
     backgroundColor: "#fff",
-    borderColor: "lightgray",
+    borderColor: "blue",
   },
   ios: {
     // height:60

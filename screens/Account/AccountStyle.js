@@ -2,7 +2,7 @@ import { Dimensions, Platform, StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   Title: {
-    fontFamily: "Roboto-Bold",
+    fontFamily: "Roboto-Normal",
     fontSize: 24,
     alignSelf: "flex-start",
     color: "#E61A23",
@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     width: Dimensions.get("screen").width * 0.9,
     backgroundColor: "white",
-    padding: 15,
+    padding: 2,
     borderRadius: 15,
     marginBottom: 10,
     borderWidth: 1,
@@ -28,8 +28,9 @@ export const styles = StyleSheet.create({
     elevation: 3,
   },
   Text: {
-    fontFamily: "Roboto-Medium",
-    color: "#E61A23",
-    fontSize: 24,
+    fontFamily: "Roboto-Regular",
+    color: "black",
+    fontSize: 20,
+    marginLeft: 20,
   },
 });

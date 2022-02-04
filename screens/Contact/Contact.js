@@ -73,16 +73,16 @@ const Contact = ({ navigation }) => {
           <Text style={styles.Title}>Quick Contact</Text>
 
           <TextInput
-            variant="outlined"
-            label="Email"
+            variant="flat"
+            label="        Email"
             onChangeText={(e) => settingCreds(e, "email")}
             value={userCred.email}
             left="account-outline"
           />
 
           <TextInput
-            variant="outlined"
-            label="Full Name"
+            variant="flat"
+            label="        Full Name"
             onChangeText={(e) => settingCreds(e, "fullname")}
             value={userCred.fullname}
             left="account-outline"
@@ -105,7 +105,7 @@ const Contact = ({ navigation }) => {
           /> */}
 
           <TextInput
-            variant="outlined"
+            variant="flat"
             label="Message"
             // Inherit any props passed to it; e.g., multiline, numberOfLines below
             editable

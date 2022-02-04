@@ -11,6 +11,7 @@ import NotificationsStack from "./NotificationsStack";
 import SettingStack from "./SettingsStack";
 import HomeStack from "./HomeStack";
 import AccountStack from "./AccountStack";
+import CartStack from "./CartStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -77,8 +78,8 @@ function MyTabs() {
       />
 
       <Tab.Screen
-        name="CartStack"
-        component={NotificationsStack}
+        name="cartStack"
+        component={CartStack}
         options={{
           headerShown: false,
           tabBarLabel: "Cart",

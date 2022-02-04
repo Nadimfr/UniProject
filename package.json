@@ -10,6 +10,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@expo/vector-icons": "^12.0.5",
     "@mui/material": "^5.3.1",
     "@react-native-async-storage/async-storage": "~1.15.0",
@@ -30,6 +32,7 @@
     "react-native": "0.64.3",
     "react-native-animated-multistep": "^1.1.1",
     "react-native-element-dropdown": "^1.6.1",
+    "react-native-image-slider-show": "^1.0.3",
     "react-native-otp-form": "^1.0.2",
     "react-native-paper": "^4.11.1",
     "react-native-phone-number-input": "^2.1.0",
@@ -37,6 +40,7 @@
     "react-native-reanimated": "^2.3.1",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
+    "react-native-scroll-indicator": "^0.1.0",
     "react-native-sectioned-multi-select": "^0.9.1",
     "react-native-stepper-ui": "^0.0.9",
     "react-native-svg": "^12.1.1",

@@ -36,15 +36,15 @@ const Register = ({ navigation }) => {
       />
 
       <TextInput
-        variant="outlined"
-        label="Email"
+        variant="flat"
+        label="        Email"
         onChangeText={(e) => settingCreds(e, "email")}
         value={userCred.email}
-        left="account-outline"
+        left="email-outline"
       />
       <TextInput
-        variant="outlined"
-        label="Full Name"
+        variant="flat"
+        label="        Full Name"
         onChangeText={(e) => settingCreds(e, "fullname")}
         value={userCred.fullname}
         left="account-outline"
@@ -59,15 +59,15 @@ const Register = ({ navigation }) => {
       />
 
       <PassInput
-        variant="outlined"
-        label="Password"
+        variant="flat"
+        label="        Password"
         onChangeText={(e) => settingCreds(e, "password")}
         value={userCred.password}
         left="lock-outline"
       />
       <PassInput
-        variant="outlined"
-        label="Confirm Password"
+        variant="flat"
+        label="        Confirm Password"
         onChangeText={(e) => settingCreds(e, "confirm")}
         value={userCred.confirm}
         left="lock-outline"
