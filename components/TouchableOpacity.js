@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginVertical: 5,
   },
-  // secondary: {
-  //   borderWidth: 2,
-  //   borderColor: "#E61A23",
-  //   borderColor: "#E61A23",
-  //   backgroundColor: "white",
-  // },
+  secondary: {
+    borderWidth: 2,
+    borderColor: "#E61A23",
+    borderColor: "#E61A23",
+    backgroundColor: "white",
+  },
   danger: {
     borderColor: "#313783",
     backgroundColor: "#313783",
@@ -65,6 +65,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#E61A23",
   },
   home: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor: "#D1D1D1",
     paddingVertical: 10,
     paddingHorizontal: Platform.OS === "ios" ? 40 : 30,

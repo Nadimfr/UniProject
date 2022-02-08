@@ -41,9 +41,13 @@ const Home = ({ navigation }) => {
 
       <Slideshow
         dataSource={[
-          { url: "http://placeimg.com/640/480/any" },
-          { url: "http://placeimg.com/640/480/any" },
-          { url: "http://placeimg.com/640/480/any" },
+          {
+            url: "https://cellularnews.com/wp-content/uploads/2020/02/Best-Budget-Phone-Under-200.jpg",
+          },
+          {
+            url: "https://assets.shop.masoko.com/catalog/category/mobile_phones.png",
+          },
+          // { url: "http://dev.2use.com/static/media/iphone.f392fd50.png" },
         ]}
       />
     </View>

@@ -62,4 +62,18 @@ export const styles = StyleSheet.create({
     fontFamily: "Roboto-Bold",
     color: "#E61A23",
   },
+  Text1: {
+    fontFamily: "Roboto-Bold",
+  },
+  Text2: {
+    fontFamily: "Roboto-Bold",
+    color: "#E61A23",
+  },
+  Icon: {
+    marginRight: 15,
+  },
+  Icon2: {
+    marginRight: 15,
+    transform: [{ rotateY: "180deg" }, { rotateZ: "180deg" }],
+  },
 });

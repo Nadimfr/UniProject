@@ -15,8 +15,6 @@ import {
 } from "../../components";
 
 const ForgotPassword = ({ navigation }) => {
-  /* Define the steps  */
-
   const Step1 = (props) => {
     const [userCred, setUserCred] = useState({ email: "" });
 
